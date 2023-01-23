@@ -62,6 +62,9 @@ public class InterviewApplication{
         
     }
 
+    /**
+     * print the first two of applicants who are there in interview queue. 
+     */
     public static void printRegistered(){
 
         System.out.println("\n-----Interviews are conducted for the following applicants-----");
