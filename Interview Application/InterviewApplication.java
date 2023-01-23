@@ -33,9 +33,13 @@ public class InterviewApplication{
             
             //factory method to create applicant object...
             Applicant applicant = Applicant.addApplicant(name, age, email, number);
+
+            //if the applicant has entered one detail that is incorrect or email that is already registered then it will return null
             if(applicant==null){
                 System.out.println("\n\t\t-x-x-x-Try again-x-x-x-\n");
             }
+
+            //else it will return applicant object
             else{
                 System.out.println("\nApplicant "+name+" is successfully added in the database");
                 applicantQueue.add(applicant);
